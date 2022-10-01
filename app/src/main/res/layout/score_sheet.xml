@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Bichoy Sedrak - CSIT551 Mobile Computing Summer 2022-->
+<!-- a fragment to show the score at the end of the test -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Scroll1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backall"
+    android:contentDescription="@string/scoresheet">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/score"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/purple_500">
+    <TextView
+        android:id="@+id/userinfo_score"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:padding="3dp"
+        android:hint="User ID"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/string"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+<TextView
+    android:id="@+id/tvscore"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:gravity="center"
+    android:padding="3dp"
+    android:text="@string/your_score_is"
+    android:textAlignment="center"
+    android:textAllCaps="false"
+    android:textColor="@color/string"
+    android:background="@color/purple_200"
+    android:textSize="25sp"
+    android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/button"
+        android:text="@string/reset_quiz"
+        android:textAllCaps="false"/>
+
+
+
+</LinearLayout>
+</ScrollView>
+
+    <!-- End Bichoy Sedrak-->

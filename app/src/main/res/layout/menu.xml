@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Bichoy Sedrak - CSIT551 Mobile Computing Summer 2022-->
+
+<!-- scroll view to show on both landscape and protrait -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Scroll1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backall"
+    android:contentDescription="@string/credits"
+    tools:context=".menu">
+
+    <!-- constraint view to show all views -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- a text view for copy rights -->
+        <TextView
+            android:id="@+id/credit_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:text="@string/created_by_bichoy_sedrak_nmontclair_state_university_nsedrakb1_montclair_edu"
+            android:textColor="@color/string"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+        <!-- an image to click and go back to the game-->
+        <ImageView
+            android:id="@+id/takeourquiz"
+            android:layout_width="260dp"
+            android:layout_height="187dp"
+            android:layout_marginStart="75dp"
+            android:layout_marginEnd="75dp"
+            android:contentDescription="@string/takeourquiz"
+            android:src="@drawable/giphy"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/credit_author" />
+
+        <!-- the game logo -->
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="276dp"
+            android:layout_height="235dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/logo2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!--A button that goes to the help screen to explain the game -->
+
+        <!-- A Button that shows the high scores -->
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+
+    <!-- End Bichoy Sedrak -->

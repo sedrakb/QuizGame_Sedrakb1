@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Bichoy Sedrak - CSIT551 Mobile Computing Summer 2022-->
+
+<!-- scroll view to show on both landscape and protrait -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Scroll1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backall"
+    android:contentDescription="@string/app_name"
+    tools:context=".Homescreen">
+
+    <!-- constraint view to show all views -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--logo -->
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="263dp"
+            android:layout_height="174dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/quiz_time"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.025"
+            app:srcCompat="@drawable/logo2"
+            tools:ignore="ImageContrastCheck" />
+        <!--user info display -->
+        <TextView
+            android:id="@+id/userinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="160dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="160dp"
+           android:hint="@string/user_s_info"
+            android:textColor="@color/string"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.508"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+        <!--display number of questions attempted  -->
+        <TextView
+            android:id="@+id/numberques"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="50dp"
+            android:gravity="center"
+            android:text="@string/number_of_questions"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/string"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/userinfo" />
+        <!--to display the questions -->
+        <TextView
+            android:id="@+id/tvquestions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/question"
+            android:textAlignment="center"
+            android:textColor="@color/string"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/numberques" />
+        <!--to display the  4 options -->
+        <LinearLayout
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            app:layout_constraintTop_toBottomOf="@id/tvquestions"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btOption1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="4dp"
+                android:text="@string/option_1"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/button"
+                />
+            <Button
+                android:id="@+id/btOption2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="4dp"
+                android:text="@string/option_2"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/button"
+                />
+
+            <Button
+                android:id="@+id/btOption3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="4dp"
+                android:text="@string/option_3"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/button"
+                />
+
+            <Button
+                android:id="@+id/btOption4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="4dp"
+                android:text="@string/option_4"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/button"
+                />
+
+
+        </LinearLayout>
+        
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
+    <!--End Bichoy Sedrak -->

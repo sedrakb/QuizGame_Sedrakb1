@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "510460942623",
+    "project_id": "quizgame-sedrakb1-b98c9",
+    "storage_bucket": "quizgame-sedrakb1-b98c9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:510460942623:android:c685e65912eb2519ae782a",
+        "android_client_info": {
+          "package_name": "com.example.quizgame_sedrakb1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "510460942623-23062ducmioco28p9egibe4l369dg972.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDap_RyW5Irfwx0jbG9dhPqA7WBuVvLaY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "510460942623-23062ducmioco28p9egibe4l369dg972.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

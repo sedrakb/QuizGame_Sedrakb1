@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Bichoy Sedrak - CSIT551 Mobile Computing Summer 2022-->
+
+<!-- scroll view to show on both landscape and protrait -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Scroll1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backall"
+    android:contentDescription="@string/app_name"
+    tools:context=".MainActivity">
+
+    <!-- constraint view to show all views -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- logo -->
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="263dp"
+            android:layout_height="174dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/quiz_time"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.025"
+            app:srcCompat="@drawable/logo2"
+            tools:ignore="ImageContrastCheck" />
+        <!-- to enter the email information-->
+        <EditText
+            android:id="@+id/enteremail"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:autofillHints="emailAddress"
+            android:ems="10"
+            android:fontFamily="@font/alatsi"
+            android:hint="@string/enter_your_email_address"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/string"
+            android:textSize="24sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageView3" />
+        <!-- to enter the password information -->
+        <EditText
+            android:id="@+id/password_toggle"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:autofillHints="Enter your password"
+            android:ems="10"
+            android:fontFamily="@font/alatsi"
+            android:hint="@string/enter_your_password"
+            android:inputType="textPassword"
+            android:textColorHint="@color/string"
+            android:textSize="24sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/enteremail" />
+        <!-- the login button -->
+        <Button
+            android:id="@+id/login"
+            android:layout_width="380dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/button"
+            android:fontFamily="@font/alatsi"
+            android:text="@string/login"
+            android:textColor="#F5F5F5"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/password_toggle" />
+        <!-- register link -->
+        <TextView
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="160dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="160dp"
+            android:fontFamily="@font/alatsi"
+            android:text="@string/register_for_new_account"
+            android:textColor="@color/string"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.508"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/login" />
+        <!-- go to menu -->
+        <ImageView
+            android:id="@+id/menu"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/menu" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
+
+    <!-- End Bichoy Sedrak -->

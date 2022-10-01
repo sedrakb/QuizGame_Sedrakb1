@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Quiz Time</string>
+    <string name="quiz_time">Quiz Time</string>
+    <string name="logo2">logo2</string>
+    <string name="enter_your_email_address">Enter your email address</string>
+    <string name="enter_your_password">Enter your password</string>
+    <string name="login">Login</string>
+    <string name="register_for_new_account">Register for new account?</string>
+    <string name="credits">Credits</string>
+    <string name="created_by_bichoy_sedrak_nmontclair_state_university_nsedrakb1_montclair_edu">Created by Bichoy Sedrak \nMontclair State University \nsedrakb1@montclair.edu</string>
+    <string name="todo">TODO</string>
+    <string name="app_logo">app logo</string>
+    <string name="takeourquiz">takeourquiz</string>
+    <string name="enter_your_first_name">Enter your First Name</string>
+    <string name="enter_your_last_name">Enter your Last Name</string>
+    <string name="enter_your_date_of_birth">Enter your Date of Birth</string>
+    <string name="register">Register</string>
+    <string name="already_a_user_login">Already a user? Login</string>
+    <string name="reenter_your_password">Reenter your password</string>
+    <string name="user_s_info">User\'s Info</string>
+    <string name="number_of_questions">Number of Questions</string>
+    <string name="option_1">Option 1</string>
+    <string name="option_2">Option 2</string>
+    <string name="option_3">Option 3</string>
+    <string name="option_4">Option 4</string>
+    <string name="your_score_is">Your Score is</string>
+    <string name="reset_quiz">Reset Quiz</string>
+    <string name="quit_game">Quit Game</string>
+    <string name="start">Start</string>
+    <string name="this_is_a_multiple_choices_quiz_game_n_n_you_are_going_to_answer_10_questions">This is a multiple choices Quiz game. \n \n you are going to answer 10 questions</string>
+    <string name="high_score">High Score</string>
+    <string name="user_info">User Info</string>
+    <string name="back_to_main_screen">Back to Main Screen</string>
+    <string name="question">Question</string>
+    <string name="scoresheet">scoresheet</string>
+</resources>

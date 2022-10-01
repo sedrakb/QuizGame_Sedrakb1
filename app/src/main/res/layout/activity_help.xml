@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Bichoy Sedrak - CSIT551 Mobile Computing Summer 2022-->
+
+<!-- scroll view to show on both landscape and protrait -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Scroll1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backall"
+    android:contentDescription="@string/app_name"
+    tools:context=".Help">
+
+    <!-- constraint view to show all views -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<!-- the logo -->
+        <ImageView
+            android:id="@+id/logo3"
+            android:layout_width="263dp"
+            android:layout_height="174dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/quiz_time"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.025"
+            app:srcCompat="@drawable/logo2"
+            tools:ignore="ImageContrastCheck" />
+
+        <!--Display User name -->
+        <TextView
+            android:id="@+id/user_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="205dp"
+            android:layout_marginTop="227dp"
+            android:layout_marginEnd="206dp"
+            android:autofillHints="emailAddress"
+            android:fontFamily="@font/alatsi"
+            android:hint="@string/user_info"
+            android:textColor="@color/string"
+            android:textColorHint="#795548"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Display the game rules-->
+        <TextView
+            android:id="@+id/rules"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="160dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="160dp"
+            android:fontFamily="@font/alatsi"
+            android:text="@string/this_is_a_multiple_choices_quiz_game_n_n_you_are_going_to_answer_10_questions"
+            android:textColor="@color/string"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/user_info" />
+
+        <!-- The start button -->
+        <Button
+            android:id="@+id/Start"
+            android:layout_width="280dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/button"
+            android:fontFamily="@font/alatsi"
+            android:text="@string/start"
+            android:textColor="#F5F5F5"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rules" />
+        <!-- Back to main screen button / sign out. -->
+        <Button
+            android:id="@+id/back"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/button"
+            android:fontFamily="@font/alatsi"
+            android:text="@string/back_to_main_screen"
+            android:textColor="#F5F5F5"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Start" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
+    <!--end bichoy sedrak  -->
